@@ -1,0 +1,189 @@
+*{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  padding: 0;
+  margin: 0;
+}
+
+/*Carrusel*/
+.carousel{
+  background-color: #F2E7DC;
+  height: 100vh;
+  width: 100%; 
+}
+
+/*Estilos de fuente*/
+.carousel h2{
+  font-size: 40px;
+  text-align: left;
+  margin: 30% 5% 0 8%;
+}
+.carousel p{
+  font-size: 19px;
+  text-align: justify;
+  margin: 5% 10% 0 8%;
+}
+
+/*Seccion de los items del carrusel*/
+.carousel .items{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Estilo de los items */
+.items .item{
+  position:absolute;
+  display: flex;
+  height: 80%;
+  width: 80%;
+  background-color: #012030;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 0;
+  transition: z-index 0s;
+  transition-delay: .5s;
+}
+
+@media (max-width: 550px) {
+  .item{
+    display: flex;
+    flex-direction: column;
+    columns: 1;
+  }
+
+  .item .imgContainer{
+    padding: 0%;
+    order: 1;
+    height: 50%;
+    width: 100%;
+  }
+  .imgContainer img {
+    width: 100%;
+  }
+
+  .item .textContainer{
+    order: 2;
+    height: 50%;
+    width: 100%;
+  }
+
+  .textContainer p {
+    margin: 5%;
+    font-size: 18px;
+  }
+  .textContainer h2{
+    margin: 5%;
+    font-size: 30px;
+  }
+  
+}
+
+.item .textContainer{
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+}
+
+.imgContainer img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.textContainer .button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 40px;
+  width: 120px;
+  margin: 5% 10% 0 8%;
+
+  background-color: #F2C12E;
+  border-radius: 50px;
+  overflow: hidden;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: 0px solid white;
+  transition: border .35s;
+}
+
+.textContainer .button .background{
+  height: 0px;
+  width: 120px;
+  align-self: flex-end;
+  background-color: #012030;
+  transition: height .5s;
+}
+
+/* Animacion del boton */
+/*.button:hover > .background{ 
+  height: 40px;
+}
+*/
+.button:hover{
+  border: 1px solid white;
+}
+
+/* Estilo del texto del boton*/
+.button p{
+  position: absolute;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* Seccion de los selectores del carrusel */
+.carousel .selectors{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+}
+
+.selectors .selector{
+  width: 50px;
+  height: 5px;
+  margin: 0 5px 0 5px;
+  background-color: #d1d1d1;
+}
+
+/*Item animations*/
+.item.spinRight{
+  animation: spinRight 1s;
+  z-index: 0;
+}
+
+@keyframes spinRight {
+  0%{
+    transform: translateX(0%) scale(1);
+  }
+  50%{
+    transform: translateX(700px) scale(.75);
+  }
+  100%{
+    transform: translateX(0%) scale(.5);
+  }
+}
+
+.item.spinLeft{
+  animation: spinLeft 1s;
+  z-index: 1;
+}
+
+@keyframes spinLeft {
+  0%{
+    transform: translateX(0%) scale(.5);
+  }
+  50%{
+    transform: translateX(-700px) scale(.75);
+  }
+  100%{
+    transform: translateX(0%) scale(1);
+  }
+}
