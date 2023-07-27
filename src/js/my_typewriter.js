@@ -1,5 +1,5 @@
 const text = document.querySelector("#dynamic-text");
-const phrases = ["Ventas bajas", "Poca visibilidad", "Adonow"];
+const phrases = ["Ventas bajas", "Poca visibilidad"];
 
 let i = 0;
 let j = 0;

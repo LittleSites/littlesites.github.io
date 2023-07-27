@@ -15,10 +15,10 @@
   <!-- Bootstrap -->
 
   <!-- CSS -->
-  <link rel="stylesheet" href="src/css/main.css">
   <link rel="stylesheet" href="src/css/carousel.css">
   <link rel="stylesheet" href="src/css/form.css">
   <link rel="stylesheet" href="src/css/aviso.css">
+  <link rel="stylesheet" href="src/css/main.css">
   <!-- CSS -->
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -32,7 +32,7 @@
     </span>
     <ul>
       <li class="navbar-item">
-        <div class="main-button">
+        <div class="main-button" onclick="scrollToFormBox()">
           <p>Inicia ahora</p>
         </div>
       </li>
@@ -58,7 +58,7 @@
         <div class="textContainer">
           <h2>Crea tu pequeño sitio</h2>
           <p>Una manera facil de diseñar una pagina para tu negocio y mostrar tus servicios o productos!</p>
-          <div class="button">
+          <div class="button" onclick="scrollToFormBox()">
             <div class="background"></div>
             <p>Registrarte</p>
           </div>
@@ -71,7 +71,7 @@
         <div class="textContainer">
           <h2>Bienvenido a LittleSites</h2>
           <p>La herramienta para crear pequeños sitios web que tu negocio necesita para llegar a mas clientes!</p>
-          <div class="button">
+          <div class="button" onclick="scrollToFormBox()">
             <div class="background"></div>
             <p>Registrarte</p>
           </div>
@@ -116,11 +116,8 @@
   <div class="container-fluid action-section">
     <div class="row">
       <div class="col-md-6" id="col11">
-        <h1>¡Regístrate para obtener mas novedades!</h1>
+        <h2>¡Regístrate para obtener mas novedades!</h2>
         <p>No esperes más para destacar en el mercado y hacer crecer tu negocio. Regístrate ahora en LittleSites y descubre todas las ventajas que tenemos para ti. Potencia tu presencia online, conéctate con tus clientes de manera efectiva, crea una experiencia memorable y alcanza el éxito que mereces. ¡No dejes pasar esta oportunidad única para tu negocio!</p>
-        <!--<div class="main-button">
-          <p>Registrate ahora</p>
-        </div>-->
       </div>
       <div class="col-md-6" id="col12">
         <div id="form-box">
@@ -194,6 +191,7 @@
 
 </body>
   <script src="./src/js/aviso.js"></script>
+  <script src="./src/js/form.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>AOS.init()</script>
 </html>

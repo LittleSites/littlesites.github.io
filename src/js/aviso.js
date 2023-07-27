@@ -11,3 +11,9 @@ close.addEventListener('click', () => {
 text_av.addEventListener('click', () => {
   content.style.visibility = 'visible';
 });
+
+// button scroll to form-box
+function scrollToFormBox() {
+  const formBoxSection = document.getElementById("form-box");
+  formBoxSection.scrollIntoView({ behavior: "smooth" });
+}

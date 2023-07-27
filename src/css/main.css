@@ -66,7 +66,6 @@ lets work with 480px -> w
   color: #f4eee3;
   cursor: pointer;
   font-size: 20px;
-  font-weight: bold;
 
   display: flex;
   background-color: #F2C12E;
@@ -81,6 +80,7 @@ lets work with 480px -> w
   text-align: center;
   font-size: 20px;
   margin: 10px 20px;
+  font-weight: bold;
 }
 
 /*** Responsive ***/
@@ -105,18 +105,13 @@ lets work with 480px -> w
 
   .main-button {
     height: 35px;
+    font-weight: bold;
   }
 
   .main-button p {
     font-size: 17px;
   }
   
-}
-
-@media (max-width: 680px) {
-  /*.navbar-item:not(.main-button) {
-    visibility: hidden;
-  }*/
 }
 /*** Responsive ***/
 /**********  Navbar  **********/
@@ -217,6 +212,7 @@ lets work with 480px -> w
   
   padding: 5%;
   background-color: #EFEFEF;
+  overflow: hidden;
 }
 
 .new-section {
@@ -227,6 +223,7 @@ lets work with 480px -> w
   align-items: center;
   margin: 5%;
   width: 60vh;
+  overflow: hidden;
 }
 
 .new-section h2 {
@@ -242,6 +239,7 @@ lets work with 480px -> w
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  overflow: hidden;
 }
 
 .new-img-cont {
@@ -313,13 +311,14 @@ lets work with 480px -> w
   height: 100vh;
   padding: 0%;
   background-color: #F2E7DC;
+  overflow: hidden;
 }
 
 #col11 {
   height: 40%;
 }
 
-#col11 h1{
+#col11 h2{
   text-align: center;
   font-weight: bold;
 }
@@ -335,7 +334,7 @@ lets work with 480px -> w
   .action-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   #col11 {
@@ -344,9 +343,13 @@ lets work with 480px -> w
     height: 40%;
   }
 
-  #col11 h1 {
+  #col11 h2 {
     width: 90%;
-    margin-top: 10px;
+    margin-top: 30px;
+  }
+
+  #col11 p{
+    margin-bottom: 20px;
   }
 
   #col12 {
