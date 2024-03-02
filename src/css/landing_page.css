@@ -240,5 +240,11 @@
     height: 60%;
   }  
 }
+
+@media (max-width: 480px) {
+  .action-section {
+    height: fit-content;
+  }
+}
 /*** Responsive ***/
 /**********  action-section  **********/
