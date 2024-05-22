@@ -1,0 +1,32 @@
+.editor {
+    --backgroundColor: white;
+
+    --buttonBckgrndColor: #F2C12E;
+
+    --saveButtonHeight: 2.5rem;
+    --saveButtonWidth: 10rem;
+
+
+    background-color: var(--backgroundColor);
+}
+
+.saveSiteButton {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    height: var(--saveButtonHeight);
+    width: var(--saveButtonWidth);
+
+    background-color: var(--buttonBckgrndColor);
+    border: unset;
+    border-top-right-radius: 1rem;
+
+    font-size: inherit;
+    cursor: pointer;
+}
+
+.main {
+    display: flex;
+    padding-top: 10vh;
+}

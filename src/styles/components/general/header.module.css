@@ -1,0 +1,60 @@
+.Header {
+    height: 10vh;
+    width: 100dvw;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    padding: .5rem 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--project-blue);
+    color: var(--project-yellow);
+    -webkit-box-shadow: black 0 0 5px;
+    -moz-box-shadow: black 0 0 5px;
+    box-shadow: black 0 0 5px;
+}
+
+.Header__Title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Header__Title h1 {
+    font-size: 2rem;
+}
+
+.Header__Options {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+
+.Header__MenuButton {
+    height: 45px;
+    width: 45px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.Header__MenuButton img {
+    height: 100%;
+    width: 100%;
+}
+
+.Header__ExitButton {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--project-white);
+    font-size: 1rem;
+}
+
+.Header__LogoTitle {
+    cursor: pointer;
+}

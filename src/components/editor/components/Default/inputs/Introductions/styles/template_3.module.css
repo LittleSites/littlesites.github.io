@@ -1,0 +1,124 @@
+.MainTemplate3 {
+  height: 100dvh;
+  width: 100%;
+  padding: 2rem;
+  background-color: #434443;
+  color: #E4EEE3;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.MainTemplate3__Figure {
+  position: relative;
+  width: 50%;
+  min-height: 50%;
+  max-height: 80%;
+  transition: .5s;
+  background-color: #323332;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MainTemplate3__Image {
+  border-radius: 50%;
+  width: 90%;
+  height: auto;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.MainTemplate3__LabelImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: inherit;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: background-color .5s;
+  cursor: pointer;
+}
+
+.MainTemplate3__LabelImage:hover {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.MainTemplate3__InputImage {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.MainTemplate3__Summary {
+  padding: 1rem 1.25rem;
+  width: 50%;
+  color: #E4EEE3;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.MainTemplate3__Title {
+  font-size: clamp(3rem, 5vw, 5rem);
+  letter-spacing: .5rem;
+  transition: 1s;
+  font-weight: bold;
+
+  background-color: transparent;
+  border: none;
+  color: inherit;
+}
+
+.MainTemplate3__Description {
+  font-size: clamp(1rem, 3vw, 1.25rem);
+  width: 100%;
+  white-space: pre-wrap;
+  min-height: 10rem;
+
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  resize: none;
+}
+
+@media screen and (max-width: 870px) {
+  .MainTemplate3 {
+    flex-direction: column;
+  }
+
+  .MainTemplate3__Figure {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .MainTemplate3__Image {
+    width: auto !important;
+    max-width: 100% !important;
+  }
+
+  .MainTemplate3__Summary {
+    height: 40%;
+    width: 90%;
+    padding: 0;
+  }
+
+  .MainTemplate3__Title {
+    text-align: center;
+  }
+  
+}

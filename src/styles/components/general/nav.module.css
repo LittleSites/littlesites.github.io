@@ -1,0 +1,146 @@
+.Nav {
+  align-self: start;
+}
+
+.Nav__btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: .25rem;
+  transition: .5s ease-in-out;
+  border-radius: .5rem;
+}
+
+.Nav__btn:hover {
+  background-color: var(--project-yellow);
+}
+
+.Nav__Menu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: .5rem;
+  border-radius: 1rem;
+  transition: 1s ease-in-out;
+}
+
+.Nav__Options {
+  height: 100%;
+  width: fit-content;
+  list-style: none;
+  display: none;
+  transition: 1s ease-in-out;
+}
+
+.Nav__Option {
+  display: block;
+  width: 10rem;
+  padding: .5rem;
+  border-radius: .5rem;
+  color: black;
+  text-decoration: none;
+  transition: .5s ease-in-out;
+}
+
+.Nav__Option:hover {
+  color: var(--project-white);
+  font-weight: bold;
+  background-color: var(--project-yellow);
+}
+
+.Nav__Menu_Active {
+  padding: 1rem;
+  background-color: var(--project-white);
+  box-shadow: 0 0 10px black;
+}
+
+.Nav__Menu_Active > .Nav__Options{
+  display: contents;
+}
+
+
+.profileMenu {
+  display: block;
+  text-align: center;
+
+  width: 50px;
+  height: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
+
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: none;
+  transition: width 0.5s 0.5s, height 0.5s, background-color 0.5s,
+    box-shadow 0.5s;
+}
+
+.profileMenuOpen {
+  width: calc(33vw - 50px);
+  height: 455px;
+  background-color: var(--project-white);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+
+  transition: width 0.5s, height 0.5s 0.5s, background-color 0.5s 0.5s,
+    box-shadow 0.5s 0.5s;
+}
+
+.icon {
+  cursor: pointer;
+  transition: 0.5s;
+  
+}
+
+.iconWhenOpen {
+  margin-top: 7.5px;
+  width: 70px;
+  height: 70px;
+
+  transition: 0.5s 0.5s;
+}
+
+.userNameText {
+  font-size: 1.5rem;
+  color: black;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.userNameTextOpen {
+  opacity: 1;
+}
+
+.menuOption {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  height: 50px;
+  padding-left: 20px;
+
+  color: black;
+  text-decoration: none;
+  opacity: 0;
+
+  transition: .5s ease-in-out;
+}
+
+.menuOptionOpen {
+  opacity: 1;
+}
+
+.menuOption:hover {
+  color: var(--project-white);
+  font-weight: bold;
+  background-color: var(--project-yellow);
+}
+
+.email {
+  color: black;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.emailOpen{
+  opacity: 1;
+}

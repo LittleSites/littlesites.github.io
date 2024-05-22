@@ -1,0 +1,128 @@
+/** Introduction Template 1 - Input */
+
+.MainTemplate1 {
+  background-color: #989998;
+  color: #deeede;
+  height: 100dvh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  scroll-behavior: smooth;
+}
+
+.MainTemplate1__article,
+.MainTemplate1__image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.MainTemplate1__article {
+  padding: clamp(1rem, 2vw, 2rem);
+  gap: clamp(0.75rem, 2vw, 2rem);
+}
+
+.MainTemplate1__Title,
+.MainTemplate1__Slogan {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  text-align: center; /* user input */
+}
+
+.MainTemplate1__Title {
+  font-weight: bold;
+  font-size: clamp(1.75rem, 5vw, 3rem);
+  letter-spacing: clamp(0.75px, 2vw, 0.25rem);
+}
+
+.MainTemplate1__Slogan {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  letter-spacing: clamp(0.5px, 1vw, 0.25rem);
+}
+
+.MainTemplate1__image > figure{
+  position: relative;
+  width: 90%;
+  max-height: 80%;
+  min-height: 50%;
+  background-color: #323332;
+}
+
+.MainTemplate1__ImageLabel,
+.MainTemplate1__ImageInput {
+  position: absolute;
+
+  top : 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: transparent;
+  color: #F4EEE3;
+  cursor: pointer;
+
+  z-index: 1;
+
+  transition: background-color .5s ease-in-out;
+}
+
+.MainTemplate1__ImageInput {
+  display: none;
+}
+
+.MainTemplate1__ImageLabel:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.MainTemplate1__image > figure > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .MainTemplate1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .MainTemplate1__image {
+    order: 1;
+  }
+  .MainTemplate1__image > figure {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+  }
+  .MainTemplate1__image > figure > img {
+    min-width: 100%;
+    height: 100%;
+  }
+
+  .MainTemplate1__article {
+    order: 2;
+    justify-content: space-evenly;
+  }
+}
+
+.MainTemplate1__CTA {
+  text-decoration: none;
+  background-color: #212221;
+  text-align: center;
+  color: inherit;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 1.5rem;
+  padding: clamp(.5rem, 1vw, 1rem) clamp(1rem, 2vw, 2rem);
+  transition: 1s ease-in-out;
+}

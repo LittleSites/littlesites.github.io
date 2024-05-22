@@ -1,0 +1,93 @@
+.services-1 {
+  background-color: #F1F1F1;
+  color: #121112;
+  padding: 1rem;
+}
+
+.services-1__title {
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.services-1__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-template-rows: 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.services-1__service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  border: #F1F1F1 1px solid;
+  transition: background-color .3s;
+}
+
+.services-1__service-figure {
+  position: relative;
+  height: 10rem;
+  width: 10rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-1__service-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.services-1__service-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: .5rem;
+  color: #0070F3;
+  transition: color .3s;
+}
+
+.services-1__service:hover {
+  background-color: #0070F3;
+  color: #F1F1F1;
+}
+
+.services-1__service-description {
+  color: inherit;
+}
+
+.services-1__title,
+.services-1__service-title,
+.services-1__service-description {
+  width: 9rem;
+  border: none;
+  background-color: transparent;
+}
+
+.services-1__title {
+  width: 25rem;
+}
+
+.services-1__title:focus,
+.services-1__service-title:focus,
+.services-1__service-description:focus {
+  outline: #F1F1F1 solid 1px;
+}
+
+
+.services-1__service:hover .services-1__service-title::placeholder,
+.services-1__service:hover .services-1__service-description::placeholder {
+  color: #F1F1F1BB;
+}
+
+.services-1__title:focus {
+  outline: #121112 solid 1px;
+}
+
+.services-1__service:hover .services-1__service-title {
+  color: #F1F1F1;
+}

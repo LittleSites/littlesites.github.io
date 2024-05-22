@@ -1,0 +1,16 @@
+.introduction-5 {
+  height: 100dvh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #212221;
+  color: #F4EEE3;
+}
+
+.introduction-5__title {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  font-weight: 700;
+  padding: 1rem 1.25rem;
+}

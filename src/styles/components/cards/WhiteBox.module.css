@@ -1,0 +1,40 @@
+.WhiteBox {
+  background-color: white;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  width: 400px;
+  height: 350px;
+  flex-shrink: 0;
+  flex-grow: 1;
+  
+  box-shadow: 11px 10px 400px -90px rgba(0,0,0,1);
+  -webkit-box-shadow: 11px 10px 400px -90px rgba(0,0,0,1);
+  -moz-box-shadow: 11px 10px 400px -90px rgba(0,0,0,1);
+}
+
+.WhiteBox:hover {
+  transform: scale(1.07);
+}
+
+.WhiteBox__Title {
+  height: 50px;
+  text-align: center;
+  font-size: 2rem;
+  padding: .5rem;
+}
+
+.WhiteBox__Figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+}
+
+.WhiteBox__Figure img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 1rem;
+}

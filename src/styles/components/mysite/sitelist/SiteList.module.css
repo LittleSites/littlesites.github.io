@@ -1,0 +1,16 @@
+.createSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.sites {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.title {
+    font-size: 1.8rem;
+}

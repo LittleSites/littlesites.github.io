@@ -1,0 +1,11 @@
+
+.styleComponents {
+    padding: .5rem;
+}
+
+
+.compTypeTitle {
+    font-size:  1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}

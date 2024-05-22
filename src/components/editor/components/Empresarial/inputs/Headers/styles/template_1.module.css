@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 4rem .5rem 4rem;
+
+}
+
+.logo {
+    height: 50px;
+}
+
+.tagsSection {
+    display: flex;
+    align-items: center;
+}
+
+.addTagButton {
+    background-color: unset;
+    border: unset;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.headerTag {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: .4rem;
+
+    color: black;
+    font-size: 1rem;
+}
+
+.headerTag:hover {
+    color: black;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.socialLink {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 30px;
+
+    cursor: pointer;
+}

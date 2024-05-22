@@ -1,0 +1,45 @@
+/* styles/ProfessionalHeader.module.css */
+
+.header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+}
+
+.navList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navItem {
+  margin-left: 20px;
+}
+
+.navItem a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navItem a:hover {
+  color: #007bff;
+}

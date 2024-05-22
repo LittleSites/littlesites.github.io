@@ -1,0 +1,51 @@
+
+
+.component {
+    display: flex;
+    height: 2.4rem;
+    margin-top: .8rem;
+    margin-bottom: .8rem;
+
+    align-items: center;
+
+    background: unset;
+}
+
+.componentDragging {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+
+    border: 2px dashed rgb(0, 168, 168);
+    box-sizing: content-box;
+}
+
+.component:hover {
+    background-color: rgba(0, 0, 0, 0.018);
+}
+
+.componentTitle {
+    font-size: 1.2rem;
+}
+
+.componentIcon {
+    padding: .7rem;
+    height: 100%;
+}
+
+.saveSiteButton {
+    position: absolute;
+    bottom: .5rem;
+    left: calc(225px - var(--saveButtonWidth));
+    z-index: 0;
+
+    height: var(--saveButtonHeight);
+    width: var(--saveButtonWidth);
+
+    background-color: var(--buttonBckgrndColor);
+    border: unset;
+    border-radius: 1rem;
+
+    font-size: inherit;
+    cursor: pointer;
+}
