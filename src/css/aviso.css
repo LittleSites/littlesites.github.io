@@ -1,0 +1,32 @@
+
+.content {
+  position: fixed;
+  height: 80vh;
+  overflow-y: scroll;
+  width: 90%;
+  z-index: 1;
+  top: 100px;
+
+  left: 5%;
+
+  padding: 5%;
+  background-color: #f4eee3;
+  border-style: solid;
+  border-color: #012030;
+  border-width: 0.5px;
+  border-radius: 20px;
+}
+
+#close {
+  font-size: 20px;
+  position: absolute;
+  width: fit-content;
+  cursor: pointer;
+  right: 25px;
+  top: 25px;
+}
+
+#text-aviso {
+  text-decoration: underline;
+  cursor: pointer;
+}
